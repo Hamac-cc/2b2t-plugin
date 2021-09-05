@@ -1,4 +1,4 @@
-command "/2b2t":
+command /2b2t:
     trigger:
         send "&4---------&c= &6{servername} &c=&4---------" to player
         send "&3Stauts&b:" to player
@@ -6,7 +6,7 @@ command "/2b2t":
         send "&2Server ip&a: &r{serverip}" to player
         send "&2Version&a: &r{version}" to player
         send "&2Web site&a: &r{website}" to player
-command "/setting <text> <text> <text> <text>":
+command /setting <text> <text> <text> <text>:
     permission: 2b2tpl.op
     trigger:
         send "/setting <servername> <serverip> <serverversion> <serverwebsite>" to player
@@ -18,6 +18,6 @@ command "/setting <text> <text> <text> <text>":
         set {serverip} to arg 2
         set {version} to arg 3
         set {website} to arg 4
-command "/tps":
+command /tps:
     trigger:
         send "&2Server tps&r: &4%tps%" to player
